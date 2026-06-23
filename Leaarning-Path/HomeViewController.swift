@@ -95,7 +95,7 @@ final class HomeViewController: UIViewController {
 
         let class3Button = LessonButton(
             title: "Clase 3",
-            subtitle: "Próximamente",
+            subtitle: "UIKit II",
             iconName: "lock"
         )
 
