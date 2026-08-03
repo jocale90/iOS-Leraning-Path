@@ -95,13 +95,13 @@ final class HomeViewController: UIViewController {
 
         let class3Button = LessonButton(
             title: "Clase 3",
-            subtitle: "Próximamente",
+            subtitle: "UIKit II",
             iconName: "lock"
         )
 
         let class4Button = LessonButton(
             title: "Clase 4",
-            subtitle: "Próximamente",
+            subtitle: "Loading",
             iconName: "lock"
         )
 
@@ -161,7 +161,7 @@ final class HomeViewController: UIViewController {
 
         let class14Button = LessonButton(
             title: "Clase 14",
-            subtitle: "Próximamente",
+            subtitle: "Network",
             iconName: "lock"
         )
 
