@@ -82,7 +82,7 @@ final class HomeViewController: UIViewController {
 
     private func setupGrid() {
         let class1Button = LessonButton(
-            title: "Prueba Roberto",
+            title: "Clase 1",
             subtitle: "UIKit básico",
             iconName: "iphone"
         )
