@@ -26,7 +26,7 @@ final class LessonButton: UIButton {
     private func setupUI(title: String, subtitle: String, iconName: String) {
         backgroundColor = .secondarySystemBackground
         layer.cornerRadius = 18
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         layer.borderColor = UIColor.systemGray5.cgColor
 
         iconImageView.image = UIImage(systemName: iconName)
