@@ -95,14 +95,14 @@ final class HomeViewController: UIViewController {
 
         let class3Button = LessonButton(
             title: "Clase 3",
-            subtitle: "UIKit II",
-            iconName: "lock"
+            subtitle: "UITableView",
+            iconName: "list.bullet"
         )
 
         let class4Button = LessonButton(
             title: "Clase 4",
-            subtitle: "Loading",
-            iconName: "lock"
+            subtitle: "UICollectionView",
+            iconName: "square.grid.2x2"
         )
 
         let class5Button = LessonButton(
@@ -167,8 +167,8 @@ final class HomeViewController: UIViewController {
 
         class1Button.addTarget(self, action: #selector(openClass1), for: .touchUpInside)
         class2Button.addTarget(self, action: #selector(openClass2), for: .touchUpInside)
-        class3Button.addTarget(self, action: #selector(showComingSoon), for: .touchUpInside)
-        class4Button.addTarget(self, action: #selector(showComingSoon), for: .touchUpInside)
+        class3Button.addTarget(self, action: #selector(openClass3), for: .touchUpInside)
+        class4Button.addTarget(self, action: #selector(openClass4), for: .touchUpInside)
         class5Button.addTarget(self, action: #selector(showComingSoon), for: .touchUpInside)
         class6Button.addTarget(self, action: #selector(showComingSoon), for: .touchUpInside)
         class7Button.addTarget(self, action: #selector(showComingSoon), for: .touchUpInside)
@@ -211,6 +211,16 @@ final class HomeViewController: UIViewController {
 
     @objc private func openClass2() {
         let viewController = GitBasicsViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @objc private func openClass3() {
+        let viewController = TableViewLessonViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    @objc private func openClass4() {
+        let viewController = CollectionViewLessonViewController()
         navigationController?.pushViewController(viewController, animated: true)
     }
 
